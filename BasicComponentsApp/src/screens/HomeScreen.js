@@ -29,6 +29,10 @@ const HomeScreen = ({navigation}) => {
         title="Counter Screen (Use State)"
         onPress={() => navigation.push('CounterUseState')}
       />
+      <Button
+        title="Counter Screen (Use Reducer)"
+        onPress={() => navigation.push('CounterUseReducer')}
+      />
     </View>
   );
 };

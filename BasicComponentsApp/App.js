@@ -8,6 +8,7 @@ import ComponentsScreen from './src/screens/ComponentsScreen';
 import FlatListScreen from './src/screens/FlatListScreen';
 import ImageScreen from './src/screens/ImageScreen';
 import CounterUseStateScreen from './src/screens/CounterUseStateScreen';
+import CounterUseReducerScreen from './src/screens/CounterUseReducerScreen';
 
 const Stack = createStackNavigator();
 
@@ -35,6 +36,10 @@ function StackNavigation() {
         <Stack.Screen
           name="CounterUseState"
           component={CounterUseStateScreen}
+        />
+        <Stack.Screen
+          name="CounterUseReducer"
+          component={CounterUseReducerScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
