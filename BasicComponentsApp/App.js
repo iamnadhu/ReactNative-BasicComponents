@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
 import ComponentsScreen from './src/screens/ComponentsScreen';
 import FlatListScreen from './src/screens/FlatListScreen';
+import ImageScreen from './src/screens/ImageScreen';
 
 const Stack = createStackNavigator();
 
@@ -29,6 +30,7 @@ function StackNavigation() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Components" component={ComponentsScreen} />
         <Stack.Screen name="FlatList" component={FlatListScreen} />
+        <Stack.Screen name="Image" component={ImageScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

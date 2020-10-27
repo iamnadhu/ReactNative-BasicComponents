@@ -24,6 +24,7 @@ const HomeScreen = ({navigation}) => {
         title="Flat List Screen"
         onPress={() => navigation.push('FlatList')}
       />
+      <Button title="Image Screen" onPress={() => navigation.push('Image')} />
     </View>
   );
 };
