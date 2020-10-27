@@ -25,6 +25,10 @@ const HomeScreen = ({navigation}) => {
         onPress={() => navigation.push('FlatList')}
       />
       <Button title="Image Screen" onPress={() => navigation.push('Image')} />
+      <Button
+        title="Counter Screen (Use State)"
+        onPress={() => navigation.push('CounterUseState')}
+      />
     </View>
   );
 };

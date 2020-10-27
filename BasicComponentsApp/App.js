@@ -7,6 +7,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import ComponentsScreen from './src/screens/ComponentsScreen';
 import FlatListScreen from './src/screens/FlatListScreen';
 import ImageScreen from './src/screens/ImageScreen';
+import CounterUseStateScreen from './src/screens/CounterUseStateScreen';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +32,10 @@ function StackNavigation() {
         <Stack.Screen name="Components" component={ComponentsScreen} />
         <Stack.Screen name="FlatList" component={FlatListScreen} />
         <Stack.Screen name="Image" component={ImageScreen} />
+        <Stack.Screen
+          name="CounterUseState"
+          component={CounterUseStateScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
