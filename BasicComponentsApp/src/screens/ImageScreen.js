@@ -1,11 +1,12 @@
 import * as React from 'react';
+
 import {View, StyleSheet} from 'react-native';
 
 import ImageDetail from '../components/ImageDetail';
 
 const ImageScreen = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.containerStyle}>
       <ImageDetail
         title="Forest"
         imageSource={require('../assets/forest.jpg')}
@@ -26,7 +27,7 @@ const ImageScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     flex: 1,
     padding: 20,
   },

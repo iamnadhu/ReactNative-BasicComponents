@@ -1,20 +1,21 @@
 import * as React from 'react';
+
 import {View, Text, StyleSheet, Button} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 const HomeScreen = ({navigation}) => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Basic Components:</Text>
+    <View style={styles.containerStyle}>
       <Button
-        title="Press Button"
+        title="Click this Button"
         onPress={() => console.warn('Button Pressed!')}
       />
       <TouchableOpacity
         style={styles.touchableOpacityStyle}
         onPress={() => console.warn('Touchable Opacity Pressed!')}>
-        <Text style={styles.text}> Press Touchable Opacity 1 </Text>
-        <Text style={styles.text}> Press Touchable Opacity 2 </Text>
+        <Text style={styles.textStyle}> Press this Touchable Opacity 1 </Text>
+        <Text style={styles.textStyle}> Press this Touchable Opacity 2 </Text>
+        <Text style={styles.textStyle}> Press this Touchable Opacity 3 </Text>
       </TouchableOpacity>
       <Button
         title="Components Screen"
@@ -38,14 +39,14 @@ const HomeScreen = ({navigation}) => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     flex: 1,
     alignContent: 'flex-start',
     alignItems: 'flex-start',
     paddingLeft: 20,
     paddingTop: 20,
   },
-  text: {
+  textStyle: {
     fontSize: 20,
     paddingLeft: 3,
     color: 'white',
@@ -53,7 +54,8 @@ const styles = StyleSheet.create({
   touchableOpacityStyle: {
     backgroundColor: 'blue',
     borderRadius: 15,
-    padding: 20,
+    padding: 10,
+    marginLeft: 5,
   },
 });
 

@@ -1,12 +1,13 @@
 import * as React from 'react';
+
 import {View, Text, StyleSheet, Button} from 'react-native';
 
 const CounterUseStateScreen = () => {
   const [counter, setCounter] = React.useState(0);
 
   return (
-    <View style={styles.container}>
-      <View style={styles.containerSub}>
+    <View style={styles.containerStyle}>
+      <View style={styles.containerSubStyle}>
         <Button
           title="Increase +"
           onPress={() => {
@@ -20,34 +21,34 @@ const CounterUseStateScreen = () => {
           }}
         />
       </View>
-      <Text style={styles.textSub1}>Current Count</Text>
-      <Text style={styles.textSub2}>{counter}</Text>
+      <Text style={styles.textSub1Style}>Current Count</Text>
+      <Text style={styles.textSub2Style}>{counter}</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     marginTop: 50,
     marginHorizontal: 20,
     flex: 1,
     alignItems: 'center',
     alignSelf: 'center',
   },
-  containerSub: {
+  containerSubStyle: {
     marginVertical: 10,
     flexDirection: 'row',
   },
-  text: {
+  textStyle: {
     fontSize: 25,
     marginBottom: 10,
   },
-  textSub1: {
+  textSub1Style: {
     fontSize: 15,
     marginLeft: 10,
     marginBottom: 10,
   },
-  textSub2: {
+  textSub2Style: {
     fontSize: 35,
     marginBottom: 10,
   },

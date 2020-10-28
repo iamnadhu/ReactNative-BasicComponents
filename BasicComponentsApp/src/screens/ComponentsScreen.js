@@ -1,4 +1,5 @@
 import * as React from 'react';
+
 import {View, Text, StyleSheet} from 'react-native';
 
 const ComponentsScreen = () => {
@@ -9,10 +10,10 @@ const ComponentsScreen = () => {
   const hello = <Text> Nadir Shah! </Text>;
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Welcome to React Native!</Text>
-      <View>
-        <Text style={styles.textSub}> React Native Components! </Text>
+    <View style={styles.containerStyle}>
+      <Text style={styles.textStyle}>Welcome to React Native!</Text>
+      <View style={styles.containerSubStyle}>
+        <Text style={styles.textSubStyle}> React Native Components! </Text>
         <Text style={{fontSize: 20}}> Hi there! {myself}</Text>
         <Text> Favorite Numbers: {number} </Text>
         <Text> Phone: {arrayNumber} </Text>
@@ -24,23 +25,25 @@ const ComponentsScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  containerStyle: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  containerSub: {
+  containerSubStyle: {
     backgroundColor: '#ccc',
     margin: 10,
     alignItems: 'flex-start',
+    borderRadius: 15,
+    padding: 15,
   },
-  text: {
+  textStyle: {
     fontSize: 30,
     marginBottom: 10,
     color: '#FF0000',
   },
-  textSub: {
+  textSubStyle: {
     fontSize: 25,
     color: '#0000FF',
   },
