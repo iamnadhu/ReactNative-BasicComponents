@@ -67,11 +67,6 @@ const styles = StyleSheet.create({
     marginTop: 50,
     marginHorizontal: 20,
   },
-  textStyle: {
-    fontSize: 25,
-    marginBottom: 10,
-    alignSelf: 'center',
-  },
 });
 
 export default SquareUseStateScreen;
