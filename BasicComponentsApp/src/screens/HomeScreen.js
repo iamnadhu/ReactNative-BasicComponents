@@ -27,12 +27,17 @@ const HomeScreen = ({navigation}) => {
       />
       <Button title="Image Screen" onPress={() => navigation.push('Image')} />
       <Button
-        title="Counter Screen (Use State)"
+        title="Counter Screen (Using Use State)"
         onPress={() => navigation.push('CounterUseState')}
       />
       <Button
-        title="Counter Screen (Use Reducer)"
+        title="Counter Screen (Using Use Reducer)"
         onPress={() => navigation.push('CounterUseReducer')}
+      />
+      <Button title="Color Screen" onPress={() => navigation.push('Color')} />
+      <Button
+        title="Square Screen (Using Use State)"
+        onPress={() => navigation.push('SquareUseState')}
       />
     </View>
   );
