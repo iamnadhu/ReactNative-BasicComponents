@@ -12,6 +12,8 @@ import CounterUseReducerScreen from './src/screens/CounterUseReducerScreen';
 import ColorScreen from './src/screens/ColorScreen';
 import SquareUseStateScreen from './src/screens/SquareUseStateScreen';
 import SquareUseReducerScreen from './src/screens/SquareUseReducerScreen';
+import BoxScreen from './src/screens/BoxScreen';
+import LoginScreen from './src/screens/LoginScreen';
 
 const Stack = createStackNavigator();
 
@@ -50,6 +52,8 @@ function StackNavigation() {
           name="SquareUseReducer"
           component={SquareUseReducerScreen}
         />
+        <Stack.Screen name="Box" component={BoxScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

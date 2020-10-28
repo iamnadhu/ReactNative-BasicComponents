@@ -43,6 +43,8 @@ const HomeScreen = ({navigation}) => {
         title="Square Screen (Using Use Reducer)"
         onPress={() => navigation.push('SquareUseReducer')}
       />
+      <Button title="Box Screen" onPress={() => navigation.push('Box')} />
+      <Button title="Login Screen" onPress={() => navigation.push('Login')} />
     </View>
   );
 };
