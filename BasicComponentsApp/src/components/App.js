@@ -3,17 +3,17 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import HomeScreen from './src/screens/HomeScreen';
-import ComponentsScreen from './src/screens/ComponentsScreen';
-import FlatListScreen from './src/screens/FlatListScreen';
-import ImageScreen from './src/screens/ImageScreen';
-import CounterUseStateScreen from './src/screens/CounterUseStateScreen';
-import CounterUseReducerScreen from './src/screens/CounterUseReducerScreen';
-import ColorScreen from './src/screens/ColorScreen';
-import SquareUseStateScreen from './src/screens/SquareUseStateScreen';
-import SquareUseReducerScreen from './src/screens/SquareUseReducerScreen';
-import BoxScreen from './src/screens/BoxScreen';
-import LoginScreen from './src/screens/LoginScreen';
+import HomeScreen from '../components/screens/HomeScreen';
+import ComponentsScreen from '../components/screens/ComponentsScreen';
+import FlatListScreen from '../components/screens/FlatListScreen';
+import ImageScreen from '../components/screens/ImageScreen';
+import CounterUseStateScreen from '../components/screens/CounterUseStateScreen';
+import CounterUseReducerScreen from '../components/screens/CounterUseReducerScreen';
+import ColorScreen from '../components/screens/ColorScreen';
+import SquareUseStateScreen from '../components/screens/SquareUseStateScreen';
+import SquareUseReducerScreen from '../components/screens/SquareUseReducerScreen';
+import BoxScreen from '../components/screens/BoxScreen';
+import LoginScreen from '../components/screens/LoginScreen';
 
 const Stack = createStackNavigator();
 
