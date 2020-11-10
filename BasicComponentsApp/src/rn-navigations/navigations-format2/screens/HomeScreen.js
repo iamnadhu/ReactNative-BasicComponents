@@ -2,10 +2,10 @@ import * as React from 'react';
 
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const ExploreScreen = ({navigation}) => {
+const HomeScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text>Explore Screen</Text>
+      <Text style={styles.text}>Home Screen</Text>
       <Button
         title="Go to details screen"
         onPress={() => navigation.navigate('Details')}
@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 30,
+  },
 });
 
-export default ExploreScreen;
+export default HomeScreen;

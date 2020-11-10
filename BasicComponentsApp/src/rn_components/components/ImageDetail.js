@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {View, Image, Text, StyleSheet} from 'react-native';
 
 const ImageDetail = ({title, imageSource, score}) => {
   return (

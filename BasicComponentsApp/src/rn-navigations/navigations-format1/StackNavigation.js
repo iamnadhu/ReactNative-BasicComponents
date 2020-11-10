@@ -1,20 +1,22 @@
 import * as React from 'react';
+
 import {View, Text, Button, Image, StyleSheet} from 'react-native';
+
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 function LogoTitle() {
   return (
-    <Image
-      style={logoStyles.image}
-      source={{
-        uri: 'https://randomuser.me/api/portraits/men/52.jpg',
-      }}
-    />
     // <Image
     //   style={logoStyles.image}
-    //   source={require('./src/assets/ic_react.png')}
+    //   source={{
+    //     uri: 'https://randomuser.me/api/portraits/men/52.jpg',
+    //   }}
     // />
+    <Image
+      style={logoStyles.image}
+      source={require('../navigations-format1/assets/ic_react.png')}
+    />
   );
 }
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {View, Text, StyleSheet, TextInput, Button} from 'react-native';
+import {View, Text, TextInput, Button, StyleSheet} from 'react-native';
 
 const LoginScreen = () => {
   const [name, setName] = React.useState('');

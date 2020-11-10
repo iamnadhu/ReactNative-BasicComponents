@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const ProfileScreen = ({navigation}) => {
+const ExploreScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text>Profile Screen</Text>
+      <Text style={styles.text}>Explore Screen</Text>
       <Button
-        title="Go to details screen"
-        onPress={() => navigation.navigate('Details')}
+        title="Go to profile screen"
+        onPress={() => navigation.navigate('Profile')}
       />
     </View>
   );
@@ -20,6 +20,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 30,
+  },
 });
 
-export default ProfileScreen;
+export default ExploreScreen;

@@ -3,17 +3,17 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import HomeScreen from '../components/screens/HomeScreen';
-import ComponentsScreen from '../components/screens/ComponentsScreen';
-import FlatListScreen from '../components/screens/FlatListScreen';
-import ImageScreen from '../components/screens/ImageScreen';
-import CounterUseStateScreen from '../components/screens/CounterUseStateScreen';
-import CounterUseReducerScreen from '../components/screens/CounterUseReducerScreen';
-import ColorScreen from '../components/screens/ColorScreen';
-import SquareUseStateScreen from '../components/screens/SquareUseStateScreen';
-import SquareUseReducerScreen from '../components/screens/SquareUseReducerScreen';
-import BoxScreen from '../components/screens/BoxScreen';
-import LoginScreen from '../components/screens/LoginScreen';
+import HomeScreen from './screens/HomeScreen';
+import ComponentsScreen from './screens/ComponentsScreen';
+import FlatListScreen from './screens/FlatListScreen';
+import ImageScreen from './screens/ImageScreen';
+import CounterUseStateScreen from './screens/CounterUseStateScreen';
+import CounterUseReducerScreen from './screens/CounterUseReducerScreen';
+import ColorScreen from './screens/ColorScreen';
+import SquareUseStateScreen from './screens/SquareUseStateScreen';
+import SquareUseReducerScreen from './screens/SquareUseReducerScreen';
+import BoxScreen from './screens/BoxScreen';
+import LoginScreen from './screens/LoginScreen';
 
 const Stack = createStackNavigator();
 
@@ -23,7 +23,7 @@ function StackNavigation() {
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{
-          title: 'Basic Components',
+          title: 'RN Components',
           headerStyle: {
             backgroundColor: '#FF0000',
             height: 120,

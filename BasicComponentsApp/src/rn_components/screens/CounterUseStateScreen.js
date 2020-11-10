@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Button, Text, StyleSheet} from 'react-native';
 
 const CounterUseStateScreen = () => {
   const [counter, setCounter] = React.useState(0);

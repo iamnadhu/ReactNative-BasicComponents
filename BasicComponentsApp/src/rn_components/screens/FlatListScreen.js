@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {View, Text, StyleSheet, FlatList} from 'react-native';
+import {View, Text, FlatList, StyleSheet} from 'react-native';
 
 const FlatListScreen = () => {
   const friends = [

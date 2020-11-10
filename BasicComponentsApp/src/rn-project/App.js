@@ -3,10 +3,10 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
-import HomeScreen from '../project/screens/HomeScreen';
-import DetailsScreen from '../project/screens/DetailsScreen';
-import ExploreScreen from '../project/screens/ExploreScreen';
-import ProfileScreen from '../project/screens/ProfileScreen';
+import HomeScreen from './screens/HomeScreen';
+import DetailsScreen from './screens/DetailsScreen';
+import ExploreScreen from './screens/ExploreScreen';
+import ProfileScreen from './screens/ProfileScreen';
 
 const Drawer = createDrawerNavigator();
 
