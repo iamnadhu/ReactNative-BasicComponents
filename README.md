@@ -23,25 +23,10 @@ step 02: cd ReactNative-Navigations/NavigationsApp
 step 03: npm install 
 [FYI: Installing Node files/Libraries/Dependences]
 
-step 04: npm install @react-navigation/native 
-[FYI: Installing Navigation Libraries/Dependences]
-
-step 05: npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
-[FYI: Installing required Libraries/Dependences for Navigation]
-
-step 06: npm install @react-navigation/stack 
-[FYI: Installing Stack Navigation Libraries/Dependences]
-
-step 07: npm install @react-navigation/bottom-tabs 
-[FYI: Installing Bottom Navigation Libraries/Dependences]
-
-step 08: npm install @react-navigation/drawer 
-[FYI: Installing Drawer Navigation Libraries/Dependences]
-
-step 09: npx pod-install ios 
+step 04: npx pod-install ios 
 [FYI: Installing Pod Files/Libraries/Dependences]
 OR
-step 10: cd ios && pod install && cd ..
+step 05: cd ios && pod install && cd ..
 [FYI: Another method for installing Pod Files/Libraries/Dependences]
 ```
 
