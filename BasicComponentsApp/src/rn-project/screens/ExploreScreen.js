@@ -8,7 +8,7 @@ const ExploreScreen = ({navigation}) => {
       <Text style={styles.text}>Explore Screen</Text>
       <Button
         title="Go to profile screen"
-        onPress={() => navigation.navigate('Profile')}
+        onPress={() => alert('Button Clicked!')}
       />
     </View>
   );

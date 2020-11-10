@@ -3,11 +3,7 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 
-import HomeScreen from './screens/HomeScreen';
-import DetailsScreen from './screens/DetailsScreen';
-import ExploreScreen from './screens/ExploreScreen';
-import ProfileScreen from './screens/ProfileScreen';
-
+import MainTabScreen from '../rn-project/screens/MainTabScreen';
 const Drawer = createDrawerNavigator();
 
 const App = () => {
@@ -24,16 +20,10 @@ const App = () => {
             fontWeight: 'bold',
           },
         }}>
-        <Drawer.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{
-            title: 'Overview',
-          }}
-        />
-        <Drawer.Screen name="Details" component={DetailsScreen} />
-        <Drawer.Screen name="Explore" component={ExploreScreen} />
-        <Drawer.Screen name="Profile" component={ProfileScreen} />
+        <Drawer.Screen name="Home" component={MainTabScreen} />
+        {/* <Drawer.Screen name="Details" component={DetailsStackScreen} /> */}
+        {/* <Drawer.Screen name="Explore" component={ExploreScreen} />
+        <Drawer.Screen name="Profile" component={ProfileScreen} /> */}
       </Drawer.Navigator>
     </NavigationContainer>
   );

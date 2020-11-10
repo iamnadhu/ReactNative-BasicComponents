@@ -8,7 +8,7 @@ const DetailsScreen = ({navigation}) => {
       <Text style={styles.text}>Details Screen</Text>
       <Button
         title="Go to explore screen"
-        onPress={() => navigation.navigate('Explore')}
+        onPress={() => alert('Button Clicked!')}
       />
     </View>
   );

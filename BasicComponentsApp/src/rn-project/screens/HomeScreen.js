@@ -8,7 +8,7 @@ const HomeScreen = ({navigation}) => {
       <Text style={styles.text}>Home Screen</Text>
       <Button
         title="Go to details screen"
-        onPress={() => navigation.navigate('Details')}
+        onPress={() => alert('Button Clicked!')}
       />
     </View>
   );
