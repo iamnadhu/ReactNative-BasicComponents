@@ -1,17 +1,20 @@
 import * as React from 'react';
 
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import {createDrawerNavigator} from '@react-navigation/drawer';
 
 import HomeScreen from '../project/screens/HomeScreen';
 import DetailsScreen from '../project/screens/DetailsScreen';
+import ExploreScreen from '../project/screens/ExploreScreen';
+import ProfileScreen from '../project/screens/ProfileScreen';
 
-const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator
+      <Drawer.Navigator
+        initialRouteName="Home"
         screenOptions={{
           headerStyle: {
             backgroundColor: '#009387',
@@ -21,13 +24,17 @@ const App = () => {
             fontWeight: 'bold',
           },
         }}>
-        <Stack.Screen
+        <Drawer.Screen
           name="Home"
           component={HomeScreen}
-          options={{title: 'Overview'}}
+          options={{
+            title: 'Overview',
+          }}
         />
-        <Stack.Screen name="Details" component={DetailsScreen} />
-      </Stack.Navigator>
+        <Drawer.Screen name="Details" component={DetailsScreen} />
+        <Drawer.Screen name="Explore" component={ExploreScreen} />
+        <Drawer.Screen name="Profile" component={ProfileScreen} />
+      </Drawer.Navigator>
     </NavigationContainer>
   );
 };
