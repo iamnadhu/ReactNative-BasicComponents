@@ -2,14 +2,11 @@ import * as React from 'react';
 
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const ProfileScreen = ({navigation}) => {
+const ProfileScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Profile Screen</Text>
-      <Button
-        title="Go to home screen"
-        onPress={() => alert('Button Clicked!')}
-      />
+      <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
     </View>
   );
 };

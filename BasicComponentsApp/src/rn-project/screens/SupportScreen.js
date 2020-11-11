@@ -2,14 +2,11 @@ import * as React from 'react';
 
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const HomeScreen = ({navigation}) => {
+const SupportScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home Screen</Text>
-      <Button
-        title="Go to updates screen"
-        onPress={() => navigation.navigate('Updates')}
-      />
+      <Text style={styles.text}>Support Screen</Text>
+      <Button title="Go back" onPress={() => navigation.goBack()} />
     </View>
   );
 };
@@ -25,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
+export default SupportScreen;

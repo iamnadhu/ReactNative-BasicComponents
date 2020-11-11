@@ -1,19 +1,16 @@
 import * as React from 'react';
 
-import {createStackNavigator} from '@react-navigation/stack';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
-import Icon from 'react-native-vector-icons/Entypo';
+import {createStackNavigator} from '@react-navigation/stack';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import HomeScreen from './HomeScreen';
-import DetailsScreen from './DetailsScreen';
-import ExploreScreen from './ExploreScreen';
+import UpdatesScreen from './UpdatesScreen';
 import ProfileScreen from './ProfileScreen';
+import ExploreScreen from './ExploreScreen';
 
 const HomeStack = createStackNavigator();
-const DetailsStack = createStackNavigator();
+const UpdatesStack = createStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
 const MainTabScreen = () => (
@@ -25,18 +22,18 @@ const MainTabScreen = () => (
         tabBarLabel: 'Home',
         tabBarColor: '#009387',
         tabBarIcon: ({color}) => (
-          <MaterialCommunityIcons name="home" color={color} size={26} />
+          <Icon name="ios-home" color={color} size={26} />
         ),
       }}
     />
     <Tab.Screen
-      name="Details"
-      component={DetailsStackScreen}
+      name="Updates"
+      component={UpdatesStackScreen}
       options={{
-        tabBarLabel: 'Details',
+        tabBarLabel: 'Updates',
         tabBarColor: '#1f65ff',
         tabBarIcon: ({color}) => (
-          <MaterialCommunityIcons name="bell" color={color} size={26} />
+          <Icon name="ios-notifications" color={color} size={26} />
         ),
       }}
     />
@@ -47,7 +44,7 @@ const MainTabScreen = () => (
         tabBarLabel: 'Profile',
         tabBarColor: '#694fad',
         tabBarIcon: ({color}) => (
-          <MaterialCommunityIcons name="account" color={color} size={26} />
+          <Icon name="ios-person" color={color} size={26} />
         ),
       }}
     />
@@ -58,7 +55,7 @@ const MainTabScreen = () => (
         tabBarLabel: 'Explore',
         tabBarColor: '#d02860',
         tabBarIcon: ({color}) => (
-          <MaterialCommunityIcons name="cog" color={color} size={26} />
+          <Icon name="ios-aperture" color={color} size={26} />
         ),
       }}
     />
@@ -81,21 +78,21 @@ const HomeStackScreen = ({navigation}) => (
       component={HomeScreen}
       options={{
         title: 'Overview',
-        headerLeft: () => {
+        headerLeft: () => (
           <Icon.Button
-            name="menu"
+            name="ios-menu"
             size={25}
             backgroundColor="#009387"
             onPress={() => navigation.openDrawer()}
-          />;
-        },
+          />
+        ),
       }}
     />
   </HomeStack.Navigator>
 );
 
-const DetailsStackScreen = ({navigation}) => (
-  <DetailsStack.Navigator
+const UpdatesStackScreen = ({navigation}) => (
+  <UpdatesStack.Navigator
     screenOptions={{
       headerStyle: {
         backgroundColor: '#1f65ff',
@@ -105,21 +102,21 @@ const DetailsStackScreen = ({navigation}) => (
         fontWeight: 'bold',
       },
     }}>
-    <DetailsStack.Screen
-      name="Details"
-      component={DetailsScreen}
+    <UpdatesStack.Screen
+      name="Updates"
+      component={UpdatesScreen}
       options={{
-        headerLeft: () => {
+        headerLeft: () => (
           <Icon.Button
-            name="menu"
+            name="ios-menu"
             size={25}
             backgroundColor="#1f65ff"
             onPress={() => navigation.openDrawer()}
-          />;
-        },
+          />
+        ),
       }}
     />
-  </DetailsStack.Navigator>
+  </UpdatesStack.Navigator>
 );
 
 export default MainTabScreen;

@@ -2,14 +2,11 @@ import * as React from 'react';
 
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const DetailsScreen = ({navigation}) => {
+const BookmarkScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Details Screen</Text>
-      <Button
-        title="Go to explore screen"
-        onPress={() => alert('Button Clicked!')}
-      />
+      <Text style={styles.text}>Bookmark Screen</Text>
+      <Button title="Go back" onPress={() => navigation.goBack()} />
     </View>
   );
 };
@@ -25,4 +22,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DetailsScreen;
+export default BookmarkScreen;
